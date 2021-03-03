@@ -247,6 +247,7 @@ X = df[feature_columns]
 
 # Target variable
 y = df['is_churn']
+y = y.astype('int')
 
 # Split X dan y ke dalam bagian training dan testing
 # Setelah variabel independent X dan variabel dependent y selesai dilakukan, maka pecahlah X dan y ke dalam bagian training dan testing. Bagian testing 25% dari jumlah entri data.
